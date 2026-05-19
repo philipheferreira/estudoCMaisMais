@@ -6,7 +6,9 @@ using namespace std;
 int main() { 
 	
 	// (espressao) ? valor1 : valor2;
-	
+	/* Esse exemplo serve para constextualizar que o operador ternario
+	pode servir para realizar acoes, que serao selecionadas atendendo
+	as os requisitos minimos, sendo apenas 2 opcoes possiveis */
 	int n1, x;
 	
 	x = 5;
