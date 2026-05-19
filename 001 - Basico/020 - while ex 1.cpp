@@ -7,9 +7,10 @@ int main() {
 	
 	int n = 0;
 	
-	while(n < 10) {
-		cout << n << "\n";
-		n++;
+	while(contador < 20) {
+		cout << "Meu nome ser Philiphe Siqueira Ferreira -- " << contador << "\n";
+		
+		contador += 2;
 	}
 	
 	system("pause");
