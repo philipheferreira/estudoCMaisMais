@@ -1,21 +1,25 @@
+
 #include <iostream>
-#include <stdlib.h>
 
-using namespace std; 
+using namespace std;
 
-/* */
-int main() { 
+int main() {
 	
-	int contador = 0;
+	/*  */
+	int tamanho = 7;
+	int vetor[tamanho];
+	int i;
+	   
+
+	/*  */
+	for( i = 0; i < tamanho; i++){
+		cout << "Digite o valor da variavel " << "\n";
+		cin >> vetor[i];
+	}
 	
-	do {
-		cout << contador << "\n";
-		contador++;
-	} while(contador < 20);
+	cout << "\n\n";
 	
-	cout << "\nRotina finalizada.\n";
-	
-	system("pause");
+	for( i = 0; i < tamanho; i++){
+		cout << vetor[i] << "\n";
+	}
 }
-
-
