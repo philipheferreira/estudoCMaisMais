@@ -8,15 +8,10 @@ using namespace std;
 /*
 A lista funciona como uma ideia de lista funcional. Posso inserir e retirar elementos
 tanto pela frente quanto por tras
-
-
  */
 
 
 /* 
-
-
-
  */
 
 int main(int argc, char *argv[]) {
@@ -27,10 +22,16 @@ int main(int argc, char *argv[]) {
 	list<int> aula;
 	int tam;
 	
-	tam = 10;
-	for(int i = 0; i < tam; i++){
-		aula.push_front(i);
-	}
+	aula.push_front(8);
+	aula.push_front(5);
+	aula.push_front(3);
+	aula.push_front(2);
+	aula.push_front(1);
+	aula.push_front(4);
+	aula.push_front(7);
+	aula.push_front(6);
+	aula.push_front(9);
+	aula.push_front(10);
 	
 	cout << "Tamanho da lista: " << aula.size() << "\n\n";
 	
