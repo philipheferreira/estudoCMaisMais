@@ -26,11 +26,17 @@ int main(int argc, char *argv[]) {
 	
 	list<int> aula;
 	int tam;
+	list<int>::iterator it;
 	
 	tam = 10;
 	for(int i = 0; i < tam; i++){
 		aula.push_front(i);
 	}
+	
+	it = aula.begin();
+	advance(it, 7);
+	
+	aula.insert(it, 0); // insere na lista
 	
 	cout << "Tamanho da lista: " << aula.size() << "\n\n";
 	
