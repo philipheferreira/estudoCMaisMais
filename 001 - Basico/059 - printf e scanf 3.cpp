@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdio.h>
 #include<stdlib.h>
+#include<math.h>
 
 using namespace std;
 
@@ -10,15 +11,9 @@ using namespace std;
 
 int main(int argc, char *argv[]) {
 	
-	int ano;
-	char nome[20];
+	float pi = M_PI;
 	
-	
-	printf("Digite seu Nome: ");
-	scanf("%s", &nome);
-	printf("\nInforme o ano do seu nascimento: ", ano);
-	scanf("%i", &ano);
-	printf("\nNome: %s\nAno de nascimento: %i\n", nome, ano);
+	printf("Valor de PI: %f\n", pi);
 	
 	system("pause");
 	
