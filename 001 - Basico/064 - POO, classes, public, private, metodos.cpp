@@ -8,14 +8,45 @@ class Aviao {
     
 	public:
 		int vel;
+		int velMax;
+		string tipo;
+		void ini(int tp); /* Aqui sera o prototipo da funcao, metodo 
+		ja que sera definido dentro dessa classe */
     
+ 	private:
+ 		
 };
+
+void Aviao::ini(int tp){
+	if(tp == 1){
+		
+		this -> velMax = 800;
+		this -> tipo = "Jato";
+		
+	}else 
+	if(tp == 2){
+		
+		this -> velMax = 350;
+		this -> tipo = "Monomotor";
+		
+	}else 
+	if(tp == 3){
+		
+		this -> velMax = 180;
+		this -> tipo = "Planador";
+		
+	}
+}
 
 int main() {
     
    Aviao *av1 = new Aviao();
+   Aviao *av2 = new Aviao();
    
-   cout << av1 -> vel;
-    
+   av1 -> ini(1);
+   av2 -> ini(2);
+   
+   cout << av1 -> velMax << endl;
+   cout << av2 -> velMax << endl; 
     
 }
