@@ -55,4 +55,33 @@ inicia esse metodo automaticamente permitindo ser inicializado */
 	setArma(false);
 }
 
+class Carro: public Veiculo{
+	public:
+		Carro();
+};
+
+Carro::Carro(){
+	vel = 0;
+	blind = 0;
+	rodas = 4;
+	setTipo(2);
+	setVelMax(180);
+	setArma(false);
+}
+
+class Tanque:public Veiculo{
+	public:
+		Tanque();
+};
+
+Tanque::Tanque(){
+	vel = 0;
+	blind = 1;
+	rodas = 8;
+	setTipo(4);
+	setVelMax(200);
+	setArma(true);
+}
+
+
 #endif
