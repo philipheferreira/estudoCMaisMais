@@ -1,38 +1,16 @@
 #include <iostream>
-#include "066 - Classes.h"
+#include "065 - Aviao.h"
 
 using namespace std;
 
 int main() {
 	
-	Veiculo *v1 = new Veiculo(3);
-	Veiculo *v2 = new Veiculo(1);
-	Veiculo *v3 = new Veiculo(2);
+	Aviao *av1 = new Aviao(3);
+	Aviao *av2 = new Aviao(1);
+	Aviao *av3 = new Aviao(2);
 	
-	v1 -> setLigado(1);
-	v2 -> setLigado(1);
-	v3 -> setLigado(1);
-	
-	cout << v1 -> getVelMax() << endl;
-	cout << v2 -> getVelMax() << endl;
-	cout << v3 -> getVelMax() << endl;
-	
-	if ( v1 -> getLigado()){
-		cout << "Veiculo 1 esta ligado" << endl;
-	} else {
-		cout << "Veiculo 1 esta desligado" << endl;
-	}
-	
-	if( v2 -> getLigado()){
-		cout << "Veiculo 2 esta ligado" << endl;
-	} else {
-		cout << "Veiculo 2 esta desligado" << endl;
-	}
-	
-	if( v3 -> getLigado()){
-		cout << "Veiculo 3 esta ligado" << endl;
-	} else {
-		cout << "Veiculo 3 esta desligado" << endl;
-	}
+	av1 -> imprimir();
+	av2 -> imprimir();
+	av3 -> imprimir();
 	
 }
