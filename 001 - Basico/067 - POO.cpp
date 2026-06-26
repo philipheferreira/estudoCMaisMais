@@ -5,7 +5,8 @@ using namespace std;
 
 int main() {
 	
-	Veiculo *v1 = new Veiculo(3);
+	Veiculo *v1 = new Veiculo(3); /* Posso instanciar um objeto enquanto ele
+	recebe um parametro novo */
 	Veiculo *v2 = new Veiculo(1);
 	Veiculo *v3 = new Veiculo(2);
 	
