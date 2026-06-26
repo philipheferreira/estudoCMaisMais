@@ -1,6 +1,9 @@
 #ifndef CLASSES_H_INCLUDED
 #define CLASSES_H_INCLUDED
 
+/* Herancas multiplas vai ser quando uma classe ira herdar propriedades e 
+metodos de uma ou mais classes */
+
 class Base1{
 	public:
 		void impBase1();
@@ -20,7 +23,7 @@ void Base2::impBase2(){
 }
 
 class CFB: public Base1, public Base2{ /* Passa todas as informacoes dentro da
-primeira classe e da segunda para a class CFB */
+primeira e segunda classe para a class CFB */
 	
 };
 

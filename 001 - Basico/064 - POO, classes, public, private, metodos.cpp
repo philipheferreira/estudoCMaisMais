@@ -11,13 +11,13 @@ class Aviao {
 		int velMax;
 		string tipo;
 		void ini(int tp); /* Aqui sera o prototipo da funcao, metodo 
-		ja que sera definido dentro dessa classe */
+		ja que sera definido para funcionar com a classe Aviao*/
     
  	private:
  		
 };
 
-void Aviao::ini(int tp){
+void Aviao::ini(int tp){ /* Metodo relacionado a classe aviao */
 	if(tp == 1){
 		
 		this -> velMax = 800;
@@ -40,8 +40,8 @@ void Aviao::ini(int tp){
 
 int main() {
     
-   Aviao *av1 = new Aviao();
-   Aviao *av2 = new Aviao();
+   Aviao *av1 = new Aviao(); /* estou instanciando: Criando um objeto a partir desta classe */
+   Aviao *av2 = new Aviao(); /* estou instanciando: Criando um objeto a partir desta classe */
    
    av1 -> ini(1);
    av2 -> ini(2);
