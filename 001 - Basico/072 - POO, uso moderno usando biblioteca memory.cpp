@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdlib.h>
 #include <memory>
 /* Usando a nova forma de POO para as operacoes, de forma mais pratica e dinamica.
 Tambem ser a forma como todos usam hoje em dia */
@@ -37,6 +38,8 @@ int main() {
 	agora posso utilizar o ponto */
 	cout << c1.potencia << endl;
 	cout << c1.velMax << endl;
+	
+	system("pause");
 	
 	/* Como o new nao esta sendo usado, nao preciso mais do delete */
 }
