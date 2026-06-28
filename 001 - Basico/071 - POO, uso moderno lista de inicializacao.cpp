@@ -9,7 +9,7 @@ class Carro{
 		int potencia;
 		const char* nome;
 		
-		Carro(const char* n, int p): nome(n), potencia(p){ /*  */
+		Carro(const char* n, int p){ /*  */
 			this -> nome = n; 
 			this -> potencia = p;
 			if( p < 100){

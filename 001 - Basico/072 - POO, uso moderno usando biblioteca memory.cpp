@@ -9,9 +9,11 @@ class Carro{
 		int potencia;
 		const char* nome;
 		
-		Carro(const char* n, int p): nome(n), potencia(p){ /*  */
-			this -> nome = n; 
-			this -> potencia = p;
+		Carro(const char* n, int p): nome(n), potencia(p){ /* Lista de inicializacao,
+		Como estou utilizando a lista de inicializacao nao necessito nao sera mais
+		necessario realizar os apontamentos com o this para as variaveis nome e 
+		potencia e realionar elas com as variaveis locais desse metodo
+		*/
 			if( p < 100){
 				this -> velMax = 120;
 			}else 
@@ -27,14 +29,14 @@ using namespace std;
 
 int main() {
 	
-	unique_ptr<Carro>c1(new Carro{"Brunoo", 85}) /* Nao preciso mais usar a declaraco com o New para
+	unique_ptr<Carro>c1(new Carro{"Brunoo", 85}); /* Nao preciso mais usar a declaraco com o New para
 	instanciar o novo objeto. Estou utilizando a inicializacao uniforme  */
 	
 	cout << "Informacoes do objeto carro instanciado: " << endl;
-	cout << c1 -> nome << endl; /* Nao precisa usar o seta, seta usa com o new,
+	cout << c1.nome << endl; /* Nao precisa usar o seta, seta usa com o new,
 	agora posso utilizar o ponto */
-	cout << c1 -> potencia << endl;
-	cout << c1 -> velMax << endl;
+	cout << c1.potencia << endl;
+	cout << c1.velMax << endl;
 	
 	/* Como o new nao esta sendo usado, nao preciso mais do delete */
 }
